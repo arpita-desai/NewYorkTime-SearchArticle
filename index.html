@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Times Search</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="jumbotron text-center">
+        <h1>New York Times Search</h1>
+      </header>
+    <div class="container">
+    <form>
+        <div class="form-group">
+          <label class="col-12 label" for="search-term">Search Term:</label>
+          <input class="col-12" type="text" id="search-term" aria-describedby="search-term">
+        </div>
+        <div class="form-group">
+            <label class="col-12 label" for="number-of-records-to-retrieve">Number of Records to Retrieve:</label>
+            <input class="col-12" type="text" id="number-of-records-to-retrieve" aria-describedby="number-of-records-to-retrieve">
+          </div>
+          <div class="form-group">
+            <label class="col-12 label" for="start-year">Start Year (Optional):</label>
+            <input class="col-12" type="text" id="start-year" aria-describedby="start-year">
+          </div>
+          <div class="form-group">
+            <label class="col-12 label" for="end-year">End Year (Optional):</label>
+            <input class="col-12" type="text" id="end-year" aria-describedby="end-year">
+          </div>
+          <div>
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+      </form>
+      <form>
+          <div></div>
+      </form>
+    </div>
+
+</body>
+</html>
