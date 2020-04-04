@@ -4,6 +4,10 @@ let queryString = '';
 let startYear = 0;
 let endYear = 0;
 let numberOfArticles = 10;
+var keyHolder = "P5pVFHFK5rTsXirQTfrhXIndJr5rpYng";
+var queryURL = url + keyHolder;
+
+
 
 const clearForm = () => {
   $("#search-term").val('');
@@ -79,7 +83,7 @@ $("#search-btn").on("click", (e) => {
 
   $.ajax({
     method: 'GET',
-    url: url
+    url: url 
   }).done((results) => {
     numberOfArticles = $("#select-number").val();
     for (let i = 0; i < numberOfArticles; i++) {

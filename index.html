@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NYT Search</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+  
+  
 </head>
 <body>
-    
-</body>
+  <div class="container">
+    <div class="jumbotron jumbotron-primary">
+      <h1>New York Times Article Search</h1>
+    </div>
+    <div class="panel panel-success">
+      <div class="panel-heading">
+          <h1 class="panel-title">Search Parameters</h1>
+      </div>
+      <div class="panel-body">
+        <form role="form">
+          <div class="form-group">
+            <label for="search">Search Term:</label>
+            <input type="text" class="form-control" id="search-term">
+          </div>
+          <div class="form-group">
+            <label for="select-number"># of Articles to Return:</label>
+            <select name="select-number" class="form-control" id="select-number">
+              <option value="10">10</option>
+              <option value="5">5</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="search">Start Year (Optional)</label>
+            <input type="text" class="form-control" id="start-year">
+          </div>
+          <div class="form-group">
+            <label for="search">End Year (Optional)</label>
+            <input type="text" class="form-control" id="end-year">
+          </div>
+          <button class="btn btn-primary" id="search-btn">Search NYT</button>
+          <button class="btn btn-primary" id="clear-form">Clear Form</button>
+        </form>
+      </div>
+    </div>
+    <div class="panel panel-success">
+      <div class="panel-heading">
+          <h1 class="panel-title">Top Articles</h1>
+      </div>
+      <div class="panel-body">
+        <div class="article-list">
+            Articles will appear here.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+
 </html>
